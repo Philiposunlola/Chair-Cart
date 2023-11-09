@@ -120,9 +120,6 @@ header .icon-cart span{
 .listCart .item:nth-child(even){
     background-color: #eee1;
 }
-.listCart{
-    overflow: auto;
-}
 .listCart::-webkit-scrollbar{
     width: 0;
 }
@@ -134,7 +131,7 @@ header .icon-cart span{
 
 
   
-.title{
+/* .title{
     font-size: xx-large;
 }
 
@@ -144,12 +141,12 @@ header .icon-cart span{
     .listProduct{
         grid-template-columns: repeat(3, 1fr);
     }
-}
+} */
 
 
 /* mobile */
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     .listProduct{
         grid-template-columns: repeat(2, 1fr);
     }
-}
+} */
