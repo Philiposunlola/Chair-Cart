@@ -2,7 +2,7 @@
 
 body{
     margin: 0;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
 }
 .container{
     width: 900px;
@@ -10,7 +10,6 @@ body{
     max-width: 90vw;
     text-align: center;
     padding-top: 10px;
-    transition: transform .5s;
 }
 svg{
     width: 30px;
@@ -24,8 +23,7 @@ header{
 .icon-cart{
     position: relative;
 }
-.icon-cart span{
-    position: absolute;
+header .icon-cart span{
     background-color: red;
     width: 30px;
     height: 30px;
