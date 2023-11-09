@@ -94,6 +94,26 @@ header .icon-cart span{
 .cartTab .btn .close{
     background-color: #eee;
 }
+.cartTab .listCart .item img{
+    width: 100%;
+}
+.cartTab .listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    color: #444;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 
 
 
