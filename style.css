@@ -39,14 +39,6 @@ header .icon-cart span{
     width: 90%;
     filter: drop-shadow(0 50px 20px #0009);
 }
-
-
-
-
-
-.title{
-    font-size: xx-large;
-}
 .listProduct{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -72,6 +64,16 @@ header .icon-cart span{
     padding: 5px 10px;
     margin-top: 10px;
     border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+  
+.title{
+    font-size: xx-large;
 }
 
 /* cart */
