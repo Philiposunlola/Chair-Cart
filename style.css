@@ -123,6 +123,9 @@ header .icon-cart span{
 .listCart{
     overflow: auto;
 }
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
 
 
 
