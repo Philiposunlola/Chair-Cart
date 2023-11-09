@@ -113,6 +113,17 @@ header .icon-cart span{
     border-radius: 50%;
     cursor: pointer;
 }
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #fff;
+}
+.listCart .item:nth-child(even){
+    background-color: #eee1;
+}
+.listCart{
+    overflow: auto;
+}
+
 
 
 
@@ -152,9 +163,6 @@ header .icon-cart span{
 }
 .listCart .item:nth-child(even){
     background-color: #eee1;
-}
-.listCart{
-    overflow: auto;
 }
 .listCart::-webkit-scrollbar{
     width: 0;
