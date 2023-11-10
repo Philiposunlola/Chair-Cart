@@ -20,13 +20,13 @@
     {
         "id": 4,
         "name":" LD04 LOUNGE CHAIR",
-        "price": 200,
+        "price": 300,
         "image": "image/4.png"
     },
     {
         "id": 5,
         "name":" LD05 LOUNGE CHAIR",
-        "price": 300,
+        "price": 310,
         "image": "image/5.png"
     },
     {
