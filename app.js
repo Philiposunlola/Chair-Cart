@@ -21,6 +21,7 @@ const initApp = () => {
         listProducts = data;
     })
 }
+initApp();
 
 
 
