@@ -3,7 +3,7 @@ let closeCart = document.querySelector('.close');
 let body = document.querySelector('body');
 let listProductHTML = document.querySelector('.listProduct');
 
-let listProduct = [];
+let listProducts = [];
 
 iconCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
@@ -11,6 +11,16 @@ iconCart.addEventListener('click', () => {
 closeCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
 })
+
+
+const initApp = () => {
+    // get data from json
+    fetch('product.json')
+    then(response => response.json())
+    then(data => {
+        listProducts = data;
+    })
+}
 
 
 
