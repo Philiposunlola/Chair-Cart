@@ -20,7 +20,7 @@ header{
     align-items: center;
     padding: 20px 0;
 }
-.icon-cart{
+header .icon-cart{
     position: relative;
 }
 header .icon-cart span{
@@ -31,6 +31,7 @@ header .icon-cart span{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    position: absolute;
     color: #fff;
     top: 50%;
     right: -20px;
