@@ -129,7 +129,7 @@ body .showCart .container{
     background-color: #eee1;
 }
 .listCart{
-    overflow: auto;
+    overflow: auto ;
 }
 .listCart::-webkit-scrollbar{
     width: 0;
