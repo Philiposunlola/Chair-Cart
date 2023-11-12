@@ -1,3 +1,31 @@
+let iconCart = document.querySelector('.icon-cart');
+let closeCart = document.querySelector('.close');
+let body = document.querySelector('body');
+let listProductHTML = document.querySelector('.listProduct');
+
+let listProduct = [];
+
+iconCart.addEventListener('click', () => {
+    body.classList.toggle('showCart');
+})
+closeCart.addEventListener('click', () => {
+    body.classList.toggle('showCart');
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // let listProductHTML = document.querySelector('.listProduct');
 // let listCartHTML = document.querySelector('.listCart');
 // let iconCart = document.querySelector('.icon-cart');
