@@ -15,17 +15,19 @@ closeCart.addEventListener('click', () => {
 const addDataToHTML = () => {
     listProductHTML.innerHTML = '';
     if (listProducts.length > 0) {
-        let newProduct = document.createElement('div');
-        newProduct.classList.add('item');
+        listProducts.forEach(product => {
+            let newProduct = document.createElement('div');
+            newProduct.classList.add('item');
             newProduct.innerHTML = `
-            <img src="${product.image}" alt="">
-            <h2>${product.name}</h2>
-            <div class="price">${product.price}</div>
-            <button class="addCart">
-                Add To Cart
-            </button>
-        `;
+                <img src="${product.image}" alt="">
+                <h2>${product.name}</h2>
+                <div class="price">${product.price}</div>
+                <button class="addCart">
+                    Add To Cart
+                </button>
+            `;
         listProductHTML.appendChild(newProduct);
+        })
     }
 }
 
