@@ -18,13 +18,14 @@ const addDataToHTML = () => {
         let newProduct = document.createElement('div');
         newProduct.classList.add('item');
             newProduct.innerHTML = `
-            <img src="image/1.png" alt="">
-            <h2>NAME PRODUCT</h2>
-            <div class="price">$200</div>
+            <img src="${product.image}" alt="">
+            <h2>${product.name}</h2>
+            <div class="price">${product.price}</div>
             <button class="addCart">
                 Add To Cart
             </button>
         `;
+        listProductHTML.appendChild(newProduct);
     }
 }
 
