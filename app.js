@@ -17,7 +17,14 @@ const addDataToHTML = () => {
     if (listProducts.length > 0) {
         let newProduct = document.createElement('div');
         newProduct.classList.add('item');
-        newProduct.innerHTML = ``;
+            newProduct.innerHTML = `
+            <img src="image/1.png" alt="">
+            <h2>NAME PRODUCT</h2>
+            <div class="price">$200</div>
+            <button class="addCart">
+                Add To Cart
+            </button>
+        `;
     }
 }
 
