@@ -16,8 +16,8 @@ closeCart.addEventListener('click', () => {
 const initApp = () => {
     // get data from json
     fetch('product.json')
-    then(response => response.json())
-    then(data => {
+    .then(response => response.json())
+    .then(data => {
         listProducts = data;
     })
 }
