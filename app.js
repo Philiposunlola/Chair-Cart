@@ -17,7 +17,7 @@ const addDataToHTML = () => {
     if (listProducts.length > 0) {
         let newProduct = document.createElement('div');
         newProduct.classList.add('item');
-        newProduct.innerHTML
+        newProduct.innerHTML = ``;
     }
 }
 
