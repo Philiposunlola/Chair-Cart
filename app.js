@@ -30,6 +30,9 @@ const addDataToHTML = () => {
         })
     }
 }
+listProductHTML.addEventListener('click', (even) =>){
+    let positionClick
+}
 
 const initApp = () => {
     // get data from json
