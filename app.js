@@ -18,6 +18,7 @@ const addDataToHTML = () => {
         listProducts.forEach(product => {
             let newProduct = document.createElement('div');
             newProduct.classList.add('item');
+            newProduct.dataset.id = product.id;
             newProduct.innerHTML = `
                 <img src="${product.image}" alt="">
                 <h2>${product.name}</h2>
@@ -31,11 +32,14 @@ const addDataToHTML = () => {
     }
 }
 listProductHTML.addEventListener('click', (even) =>){
-    let positionClick
+    let positionClick = event.target;
+    if (positionClick.classList.contains('addCart')) {
+        let product_id = positionClick.parentElement.dataset.id;
+    }
 }
 
 const initApp = () => {
-    // get data from json
+    // get dat a from json
     fetch('product.json')
     .then(response => response.json())
     .then(data => {
