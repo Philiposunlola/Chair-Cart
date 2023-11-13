@@ -12,6 +12,9 @@ closeCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
 })
 
+const addDataToHTML = () => {
+    listProductHTML.innerHTML = "";
+}
 
 const initApp = () => {
     // get data from json
@@ -19,6 +22,8 @@ const initApp = () => {
     .then(response => response.json())
     .then(data => {
         listProducts = data;
+        addDataToHTML();
+        
     })
 }
 initApp();
