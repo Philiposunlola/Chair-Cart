@@ -13,7 +13,12 @@ closeCart.addEventListener('click', () => {
 })
 
 const addDataToHTML = () => {
-    listProductHTML.innerHTML = "";
+    listProductHTML.innerHTML = '';
+    if (listProducts.length > 0) {
+        let newProduct = document.createElement('div');
+        newProduct.classList.add('item');
+        newProduct.innerHTML
+    }
 }
 
 const initApp = () => {
