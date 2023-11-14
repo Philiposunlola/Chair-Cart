@@ -57,7 +57,16 @@ const addToCart = (product_id) => {
     }else{
         carts[positionThisProductInCart].quantity = carts[positionThisProductInCart].quantity + 1;
     }
-    console.log(carts);
+    addCartToHTML();
+}
+const addCartToHTML = () => {
+    listCartHTML.innerHTML = '';
+    if (carts.length > 0) {
+        carts.forEach(cart => {
+            let newCart = document.createElement('div');
+            newCart.classList.add('item');
+        })
+    }
 }
 
 const initApp = () => {
