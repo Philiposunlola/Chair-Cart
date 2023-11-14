@@ -31,12 +31,13 @@ const addDataToHTML = () => {
         })
     }
 }
-listProductHTML.addEventListener('click', (even) =>){
+listProductHTML.addEventListener('click', (even) =>{
     let positionClick = event.target;
     if (positionClick.classList.contains('addCart')) {
         let product_id = positionClick.parentElement.dataset.id;
+        addToCart(product_id);
     }
-}
+})
 
 const initApp = () => {
     // get dat a from json
