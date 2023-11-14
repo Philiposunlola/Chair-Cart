@@ -88,7 +88,7 @@ const addCartToHTML = () => {
 
 const initApp = () => {
     // get dat a from json
-    fetch('product.json')
+    fetch('products.json')
     .then(response => response.json())
     .then(data => {
         listProducts = data;
