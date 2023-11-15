@@ -57,34 +57,34 @@ const addToCart = (product_id) => {
     }else{
         carts[positionThisProductInCart].quantity = carts[positionThisProductInCart].quantity + 1;
     }
-    console.log(carts);
+    addCartToHTML();
 }
-// const addCartToHTML = () => {
-//     listCartHTML.innerHTML = '';
-//     if (carts.length > 0) {
-//         carts.forEach(cart => {
-//             let newCart = document.createElement('div');
-//             newCart.classList.add('item');
-//             newCart.innerHTML = `
-//             <div class="image">
-//                 <img src="image/1.png" alt="">
-//             </div>
-//             <div class="name">
-//                 NAME
-//             </div>
-//             <div class="totalPrice">
-//                  $200
-//             </div>
-//             <div class="quantity">
-//                 <span class="minus"></span>
-//                 <span>${cart.quantity}</span>
-//                 <span class="plus"></span>
-//             </div>
-//             `;
-//         listCartHTML.appendChild(newCart);
-//         })
-//     }
-// }
+const addCartToHTML = () => {
+    listCartHTML.innerHTML = '';
+    if (carts.length > 0) {
+        carts.forEach(cart => {
+            let newCart = document.createElement('div');
+            newCart.classList.add('item');
+            newCart.innerHTML = `
+            <div class="image">
+                <img src="image/1.png" alt="">
+            </div>
+            <div class="name">
+                NAME
+            </div>
+            <div class="totalPrice">
+                 $200
+            </div>
+            <div class="quantity">
+                <span class="minus"></span>
+                <span>${cart.quantity}</span>
+                <span class="plus"></span>
+            </div>
+            `;
+        listCartHTML.appendChild(newCart);
+        })
+    }
+}
 
 const initApp = () => {
     // get dat a from json
