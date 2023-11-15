@@ -77,7 +77,7 @@ const addCartToHTML = () => {
             </div>
             <div class="quantity">
                 <span class="minus"></span>
-                <span>1</span>
+                <span>${cart.quantity}</span>
                 <span class="plus"></span>
             </div>
             `;
