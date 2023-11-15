@@ -65,6 +65,8 @@ const addCartToHTML = () => {
         carts.forEach(cart => {
             let newCart = document.createElement('div');
             newCart.classList.add('item');
+            let positionProduct = listProducts.findIndex((value) => value.id == cart.product_id);
+            let info = listProducts[positionProduct];
             newCart.innerHTML = `
             <div class="image">
                 <img src="image/1.png" alt="">
