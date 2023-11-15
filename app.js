@@ -73,11 +73,11 @@ const addCartToHTML = () => {
                 NAME
             </div>
             <div class="totalPrice">
-                 $200
+                $200
             </div>
             <div class="quantity">
                 <span class="minus"></span>
-                <span>${cart.quantity}</span>
+                <span>1</span>
                 <span class="plus"></span>
             </div>
             `;
