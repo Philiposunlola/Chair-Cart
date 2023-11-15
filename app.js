@@ -25,7 +25,7 @@ const addDataToHTML = () => {
             newProduct.innerHTML = `
                 <img src="${product.image}" alt="">
                 <h2>${product.name}</h2>
-                <div class="price">${product.price}</div>
+                <div class="price">$${product.price}</div>
                 <button class="addCart">
                     Add To Cart
                 </button>
@@ -34,7 +34,7 @@ const addDataToHTML = () => {
         })
     }
 }
-listProductHTML.addEventListener('click', (even) =>{
+listProductHTML.addEventListener('click', (event) =>{
     let positionClick = event.target;
     if (positionClick.classList.contains('addCart')) {
         let product_id = positionClick.parentElement.dataset.id;
@@ -57,34 +57,34 @@ const addToCart = (product_id) => {
     }else{
         carts[positionThisProductInCart].quantity = carts[positionThisProductInCart].quantity + 1;
     }
-    addCartToHTML();
+    console.log(carts);
 }
-const addCartToHTML = () => {
-    listCartHTML.innerHTML = '';
-    if (carts.length > 0) {
-        carts.forEach(cart => {
-            let newCart = document.createElement('div');
-            newCart.classList.add('item');
-            newCart.innerHTML = `
-            <div class="image">
-                <img src="image/1.png" alt="">
-            </div>
-            <div class="name">
-                NAME
-            </div>
-            <div class="totalPrice">
-                 $200
-            </div>
-            <div class="quantity">
-                <span class="minus"></span>
-                <span>${cart.quantity}</span>
-                <span class="plus"></span>
-            </div>
-            `;
-        listCartHTML.appendChild(newCart);
-        })
-    }
-}
+// const addCartToHTML = () => {
+//     listCartHTML.innerHTML = '';
+//     if (carts.length > 0) {
+//         carts.forEach(cart => {
+//             let newCart = document.createElement('div');
+//             newCart.classList.add('item');
+//             newCart.innerHTML = `
+//             <div class="image">
+//                 <img src="image/1.png" alt="">
+//             </div>
+//             <div class="name">
+//                 NAME
+//             </div>
+//             <div class="totalPrice">
+//                  $200
+//             </div>
+//             <div class="quantity">
+//                 <span class="minus"></span>
+//                 <span>${cart.quantity}</span>
+//                 <span class="plus"></span>
+//             </div>
+//             `;
+//         listCartHTML.appendChild(newCart);
+//         })
+//     }
+// }
 
 const initApp = () => {
     // get dat a from json
@@ -93,7 +93,6 @@ const initApp = () => {
     .then(data => {
         listProducts = data;
         addDataToHTML();
-        
     })
 }
 initApp();
