@@ -88,6 +88,7 @@ const addCartToHTML = () => {
         listCartHTML.appendChild(newCart);
         })
     }
+    iconCartSpan.innerText = totalQuantity;
 }
 
 const initApp = () => {
