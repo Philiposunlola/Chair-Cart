@@ -69,7 +69,7 @@ const addCartToHTML = () => {
             let info = listProducts[positionProduct];
             newCart.innerHTML = `
             <div class="image">
-                <img src="image/1.png" alt="">
+                <img src="${info.image}" alt="">
             </div>
             <div class="name">
                 NAME
