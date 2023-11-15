@@ -58,6 +58,10 @@ const addToCart = (product_id) => {
         carts[positionThisProductInCart].quantity = carts[positionThisProductInCart].quantity + 1;
     }
     addCartToHTML();
+    addCartToMemory();
+}
+const addCartToMemory = () => {
+    
 }
 const addCartToHTML = () => {
     listCartHTML.innerHTML = '';
