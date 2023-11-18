@@ -94,6 +94,12 @@ const addCartToHTML = () => {
     }
     iconCartSpan.innerText = totalQuantity;
 }
+listCartHTML.addEventListener('click', (event) => {
+    let positionClick = event.target;
+    if (positionClick.classList.contains('minus') || positionClick.classList.contains('plus')) {
+        
+    }
+})
 
 const initApp = () => {
     // get dat a from json
