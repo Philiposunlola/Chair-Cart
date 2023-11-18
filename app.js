@@ -116,8 +116,8 @@ const changeQuantityCart = (product_id, type) => {
                 break;
         
             default:
-                let changeQuantity = cart[positionItemInCart].quantity - 1;
-                if (changeQuantity > 0) {
+                let valueChange = carts[positionItemInCart].quantity - 1;
+                if (valueChange > 0) {
                     carts[positionItemInCart].quantity = valueChange;
                 }else{
                     carts.splice(positionItemInCart, 1);
