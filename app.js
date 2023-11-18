@@ -102,6 +102,12 @@ const initApp = () => {
     .then(data => {
         listProducts = data;
         addDataToHTML();
+
+        // get cart from memory
+        if (localStorage.getItem('cart')) {
+            carts = JSON.parse(localStorage.getItem('carts'));
+            addCartToHTML();
+        }
     })
 }
 initApp();
