@@ -71,6 +71,7 @@ const addCartToHTML = () => {
             totalQuantity - totalQuantity + cart.quantity;
             let newCart = document.createElement('div');
             newCart.classList.add('item');
+            newCart.dataset.id = cart.product_id;
             let positionProduct = listProducts.findIndex((value) => value.id == cart.product_id);
             let info = listProducts[positionProduct];
             newCart.innerHTML = `
