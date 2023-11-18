@@ -61,7 +61,7 @@ const addToCart = (product_id) => {
     addCartToMemory();
 }
 const addCartToMemory = () => {
-
+    localStorage.setItem('carts', JSON.stringify(carts));
 }
 const addCartToHTML = () => {
     listCartHTML.innerHTML = '';
