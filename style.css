@@ -154,7 +154,7 @@ header .icon-cart span{
 }
 
 .listCart{
-    overflow: auto ;
+    overflow: auto;
 }
 
 .listCart::-webkit-scrollbar{
