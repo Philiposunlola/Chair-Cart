@@ -91,7 +91,7 @@ header .icon-cart span{
     transition: -5s;
 }
 
-body .showCart .cartTab{
+/* body .showCart .cartTab{
     inset:0 0 0 auto;
 }
 
@@ -172,7 +172,7 @@ body .showCart .container{
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
+ */
 
 
 
