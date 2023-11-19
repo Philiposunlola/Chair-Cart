@@ -144,10 +144,10 @@ header .icon-cart span{
     cursor: pointer;
 }
 
-/* .listCart .quantity span:nth-child(2){
+.listCart .quantity span:nth-child(2){
     background-color: transparent;
     color: #fff;
-} */
+}
 
 /* .listCart .item:nth-child(even){
     background-color: #eee1;
