@@ -84,7 +84,11 @@ header .icon-cart span{
     width: 400px;
     background-color: #353432;
     color: #eee;
-
+    position: fixed;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: -5s;
 }
 
 /* body .showCart .cartTab{
