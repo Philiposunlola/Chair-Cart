@@ -149,17 +149,17 @@ header .icon-cart span{
     color: #fff;
 }
 
-/* .listCart .item:nth-child(even){
+.listCart .item:nth-child(even){
     background-color: #eee1;
-} */
+}
 
-/* .listCart{
+.listCart{
     overflow: auto ;
-} */
+}
 
-/* .listCart::-webkit-scrollbar{
+.listCart::-webkit-scrollbar{
     width: 0;
-} */
+}
 
  /* @media only screen and (max-width: 992px) {
     .listProduct{
