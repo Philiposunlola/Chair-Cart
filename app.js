@@ -65,7 +65,7 @@ const addCartToMemory = () => {
 }
 const addCartToHTML = () => {
     listCartHTML.innerHTML = '';
-    let totalQuantity = 0;
+    let totalQuantity = 1;
     if (carts.length > 0) {
         carts.forEach(cart => {
             totalQuantity - totalQuantity + cart.quantity;
@@ -93,7 +93,7 @@ const addCartToHTML = () => {
         listCartHTML.appendChild(newCart);
         })
     }
-   ;
+    iconCartSpan.innerText = totalQuantity;
 }
 listCartHTML.addEventListener('click', (event) => {
     let positionClick = event.target;
