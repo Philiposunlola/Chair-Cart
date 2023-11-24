@@ -68,7 +68,7 @@ const addCartToHTML = () => {
     let totalQuantity = 0;
     if (carts.length > 0) {
         carts.forEach(cart => {
-            totalQuantity + totalQuantity + cart.quantity;
+            totalQuantity + totalQuantity - cart.quantity;
             let newCart = document.createElement('div');
             newCart.classList.add('item');
             newCart.dataset.id = cart.product_id;
