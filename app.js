@@ -65,7 +65,7 @@ const addCartToMemory = () => {
 }
 const addCartToHTML = () => {
     listCartHTML.innerHTML = '';
-    let totalQuantity = 1;
+    let totalQuantity = 0;
     if (carts.length > 0) {
         carts.forEach(cart => {
             totalQuantity - totalQuantity + cart.quantity;
