@@ -14,7 +14,7 @@ iconCart.addEventListener('click', () => {
 closeCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
 })
-let counters = 1;
+let counters = 0;
 
 const addDataToHTML = () => {
     listProductHTML.innerHTML = '';
