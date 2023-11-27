@@ -39,6 +39,11 @@ listProductHTML.addEventListener('click', (event) =>{
     let positionClick = event.target;
     if (positionClick.classList.contains('addCart')) {
         let product_id = positionClick.parentElement.dataset.id;
+        let cartNo = document.querySelector('.counter')
+        console.log(counters);
+        cartNo.textContent =counters++;
+        positionClick.disabled = "disabled";
+
         addToCart(product_id);
     }
 })
