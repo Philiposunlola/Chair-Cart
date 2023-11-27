@@ -11,7 +11,6 @@ body{
     margin: auto;
     text-align: center;
     padding-top: 10px;
-    box-sizing: border-box;
     transition: transform -5s;
 }
 
@@ -161,27 +160,26 @@ body.showCart .container{
 .listCart::-webkit-scrollbar{
     width: 0;
 }
-.addCart:active {
-    background-color: green;
-    font-size: 100px;
-}
 
- @media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
     .listProduct{
         grid-template-columns: repeat(3, 1fr);
     }
 }  
 
- @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .listProduct{
         grid-template-columns: repeat(2, 1fr);
     }
 }  
+
 @media screen and (max-width:375px) {
     .listProduct{
         grid-template-columns: 1fr;
     }
 }
+
+ 
 
 
 
@@ -192,3 +190,5 @@ body.showCart .container{
 /* .title{
     font-size: xx-large;
 }
+
+
