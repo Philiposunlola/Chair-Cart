@@ -161,17 +161,23 @@ body.showCart .container{
     width: 0;
 }
 
- @media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
     .listProduct{
         grid-template-columns: repeat(3, 1fr);
     }
 }  
 
- @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .listProduct{
         grid-template-columns: repeat(2, 1fr);
     }
 }  
+
+@media screen and (max-width:375px) {
+    .listProduct{
+        grid-template-columns: 1fr;
+    }
+}
  
 
 
