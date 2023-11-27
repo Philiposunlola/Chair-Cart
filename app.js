@@ -3,7 +3,7 @@ let closeCart = document.querySelector('.close');
 let body = document.querySelector('body');
 let listProductHTML = document.querySelector('.listProduct');
 let listCartHTML = document.querySelector('.listCart');
-let iconCartSpan = document.querySelector('.icon-cart span');
+let iconCartSpan = document.querySelector('.counter');
 
 let listProducts = [];
 let carts = [];
@@ -27,7 +27,7 @@ const addDataToHTML = () => {
                 <img src="${product.image}" alt="">
                 <h2>${product.name}</h2>
                 <div class="price">$${product.price}</div>
-                <button class="addCart">
+                <button class="addCart" ">
                     Add To Cart
                 </button>
             `;
@@ -42,8 +42,8 @@ listProductHTML.addEventListener('click', (event) =>{
         let cartNo = document.querySelector('.counter')
         console.log(counters);
         cartNo.textContent = counters++;
-        positionClick.disabled = "disabled";
-
+        positionClick.disabled="disabled";
+        
         addToCart(product_id);
     }
 })
@@ -99,7 +99,7 @@ const addCartToHTML = () => {
         listCartHTML.appendChild(newCart);
         })
     }
-    iconCartSpan.innerText = totalQuantity;
+    // iconCartSpan.innerText = counters++;
 }
 listCartHTML.addEventListener('click', (event) => {
     let positionClick = event.target;
