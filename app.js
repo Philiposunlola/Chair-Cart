@@ -32,7 +32,7 @@ const addDataToHTML = () => {
             `;
 
         listProductHTML.appendChild(newProduct);
-        
+
         })
     }
 }
@@ -66,7 +66,7 @@ const addCartToMemory = () => {
     localStorage.setItem('carts', JSON.stringify(carts));
 }
 const addCartToHTML = () => {
-    listCartHTML.innerHTML = '';
+    listCartHTML.innerHTML = ' ';
     let totalQuantity = 0;
     if (carts.length > 0) {
         carts.forEach(cart => {
