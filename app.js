@@ -30,8 +30,9 @@ const addDataToHTML = () => {
                     Add To Cart
                 </button>
             `;
-            
+
         listProductHTML.appendChild(newProduct);
+        
         })
     }
 }
