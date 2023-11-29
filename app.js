@@ -64,9 +64,11 @@ const addToCart = (product_id) => {
     addCartToHTML();
     addCartToMemory();
 }
+
 const addCartToMemory = () => {
     localStorage.setItem('carts', JSON.stringify(carts));
 }
+
 const addCartToHTML = () => {
     listCartHTML.innerHTML = '';
     let totalQuantity = 0;
@@ -99,6 +101,7 @@ const addCartToHTML = () => {
     }
     iconCartSpan.innerText = totalQuantity;
 }
+
 listCartHTML.addEventListener('click', (event) => {
     let positionClick = event.target;
     if (positionClick.classList.contains('minus') || positionClick.classList.contains('plus')) {
@@ -110,6 +113,7 @@ listCartHTML.addEventListener('click', (event) => {
         changeQuantityCart(product_id, type);
     }
 })
+
 const changeQuantityCart = (product_id, type) => {
     let positionItemInCart = carts.findIndex((value) => value.product_id == product_id);
     if(positionItemInCart >= 0){
