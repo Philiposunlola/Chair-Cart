@@ -96,9 +96,8 @@ const addCartToHTML = () => {
             `;
         listCartHTML.appendChild(newCart);
         })
-        
-    iconCartSpan.innerText = totalQuantity;
     }
+    iconCartSpan.innerText = totalQuantity;
 }
 listCartHTML.addEventListener('click', (event) => {
     let positionClick = event.target;
