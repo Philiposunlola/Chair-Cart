@@ -6,9 +6,8 @@ let listCartHTML = document.querySelector('.listCart');
 let iconCartSpan = document.querySelector('.icon-cart span');
 let addCart = document.querySelector('.add cart');
 
-let listProducts = [];
-let carts = [];
 
+let carts = [];
 let count = 0;
 
 iconCart.addEventListener('click', () => {
