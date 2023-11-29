@@ -9,6 +9,8 @@ let addCart = document.querySelector('.add cart');
 let listProducts = [];
 let carts = [];
 
+let count = 0;
+
 iconCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
 })
