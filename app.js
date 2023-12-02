@@ -17,7 +17,7 @@ closeCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
 })
 
-cou
+co
 
 const addDataToHTML = () => {
     listProductHTML.innerHTML = '';
