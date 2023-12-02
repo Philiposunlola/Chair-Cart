@@ -17,7 +17,7 @@ closeCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
 })
 
-count++;
+count++
 
 const addDataToHTML = () => {
     listProductHTML.innerHTML = '';
@@ -38,7 +38,6 @@ const addDataToHTML = () => {
         })
     }
 }
-
 listProductHTML.addEventListener('click', (event) =>{
     let positionClick = event.target;
     if (positionClick.classList.contains('addCart')) {
@@ -68,8 +67,7 @@ const addToCart = (product_id) => {
 
 const addCartToMemory = () => {
     localStorage.setItem('carts', JSON.stringify(carts));
-}
-
+}z
 const addCartToHTML = () => {
     listCartHTML.innerHTML = '';
     let totalQuantity = 0;
