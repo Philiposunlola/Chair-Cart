@@ -67,7 +67,7 @@ const addToCart = (product_id) => {
 
 const addCartToMemory = () => {
     localStorage.setItem('carts', JSON.stringify(carts));
-}z
+}
 const addCartToHTML = () => {
     listCartHTML.innerHTML = '';
     let totalQuantity = 0;
